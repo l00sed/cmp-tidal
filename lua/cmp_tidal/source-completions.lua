@@ -5,7 +5,7 @@ local Job = require("plenary.job")
 local source = {}
 
 source.is_available = function()
-	return vim.bo.filetype == "tidal"
+	return vim.bo.filetype == "tidal" or vim.bo.filetype == "haskell"
 end
 
 source.new = function()
