@@ -7,7 +7,7 @@ local source = {}
 local default_option = { dirt_samples = utils.get_dirt_samples_path() }
 
 source.is_available = function()
-	return vim.bo.filetype == "tidal"
+	return vim.bo.filetype == "tidal" or vim.bo.filetype == "haskell"
 end
 
 source.new = function()
